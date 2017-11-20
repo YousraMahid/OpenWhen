@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <TextView
+        android:text="How are you today !??"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="#00f"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feeling"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_feel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_year"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginRight="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_month"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:layout_marginRight="15dp"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_day"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What do you say???"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edit_say"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </TableLayout>
+
+
+</LinearLayout>
